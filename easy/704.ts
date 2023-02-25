@@ -6,7 +6,7 @@ function search(nums: number[], target: number): number {
   let middleIndex;
 
   while (lowIndex <= highIndex) {
-    middleIndex = (lowIndex + highIndex) / 2;
+    middleIndex = Math.floor((lowIndex + highIndex) / 2);
     if (nums[middleIndex] < target) {
       lowIndex = middleIndex + 1;
     }
