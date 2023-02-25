@@ -2,6 +2,8 @@
 // Time complexity O(n^2)
 // Memory complexity O(log(n))
 
+export {};
+
 function quickSort(arr: number[]) {
   if (arr.length < 2) {
     return arr;
