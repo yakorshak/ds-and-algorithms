@@ -1,6 +1,6 @@
 // 1337. The K Weakest Rows in a Matrix
 
-class Heap {
+export class MinHeap {
   compareFn;
   heap;
 
@@ -30,7 +30,7 @@ function countSoldiers(arr: number[]) {
 }
 
 function kWeakestRows(mat: number[][], k: number): number[] {
-  const heap = new Heap(compareFn);
+  const heap = new MinHeap(compareFn);
   const soldiers = mat.map(i => countSoldiers(i))
   for (let i = 0; i < soldiers.length; i++) {
     heap.insert(soldiers[i], i);
